@@ -6,6 +6,7 @@
 body {
     background: #f2f2f2;
 }
+
 .clr { /* Сделано для подвала Footer */
     clear: both; /* очищает все виды обтикания (пример: float) */
 }
@@ -13,7 +14,8 @@ body {
 img {
     border: none;
 }
-    /* Шапка */
+
+/* Шапка */
 .main {
     background: #fff;
     min-width: 940px;
@@ -21,74 +23,81 @@ img {
     margin: 0 auto;
 }
 
-    .header {
-        overflow: hidden; /* Все элементы помещаются в header */
+.header {
+    overflow: hidden; /* Все элементы помещаются в header */
 }
 
-    .logo, slogan {
-        float: left;
+.logo, slogan {
+    float: left;
 }
 
-    .logo {
-        margin: 8px 0 0 30px;
+.logo {
+    margin: 8px 0 0 30px;
 }
 
-    .slogan {
-        margin: 40px 0 0 30px;
+.slogan {
+    margin: 40px 0 0 30px;
 }
 
-    .head-contact {
-        float: right;
-        background: #f8fafb url("image/time.png") no-repeat 250px 1px;
-        border: 2px solid #edf2f6;
-        border-radius: 0 0 10px 10px;
-        text-align: right;
-        margin: 0 6px 0 0;
-        padding: 5px 65px 5px 15px;
-        width: 220px;
-}
-        .head-contact p {
-            font: normal 12px Verdana, Geneva, sans-serif;
-            line-height: 1.3em; /* Межстрочный интервал */
-            margin: 0 0 3px 0;
-}
-        .head-contact p strong {
-            font: 14px Verdana, Geneva, sans-serif;
-            font-weight: normal; /* убрал жирный шрифт */
-}
-        .head-contact p span {
-            font: bold 21px Verdana, Geneva, sans-serif;
-}
-    .search-head {
-        float: right;
-}
-    .search-head li {
-        float: left;
-        list-style: none;
-        background: url("image/bg_search.png") no-repeat  left top;
-        width: 305px;
-        height: 30px;
-        margin: 5px 6px 5px 0;
-}
-    .search-button {
-        position: absolute;
-        margin-top: 3px;
-        margin-left: 7px;
-
-}
-    .search-head li:active, :hover, :focus { /* убрал все стили у поисковой формы */
-        outline: 0;
-        outline-offset: 0;
-}
-    #quickquery {
-        border: none;
-        font-size: 12px;
-        margin: 8px 23px 5px 5px;
-        width: 210px;
-        font: normal 12px Verdana, Geneva, sans-serif;
+.head-contact {
+    float: right;
+    background: #f8fafb url("image/time.png") no-repeat 250px 1px;
+    border: 2px solid #edf2f6;
+    border-radius: 0 0 10px 10px;
+    text-align: right;
+    margin: 0 6px 0 0;
+    padding: 5px 65px 5px 15px;
+    width: 220px;
 }
 
-    /* Меню */
+.head-contact p {
+    font: normal 12px Verdana, Geneva, sans-serif;
+    line-height: 1.3em; /* Межстрочный интервал */
+    margin: 0 0 3px 0;
+}
+
+.head-contact p strong {
+    font: 14px Verdana, Geneva, sans-serif;
+    font-weight: normal; /* убрал жирный шрифт */
+}
+
+.head-contact p span {
+    font: bold 21px Verdana, Geneva, sans-serif;
+}
+
+.search-head {
+    float: right;
+}
+
+.search-head li {
+    float: left;
+    list-style: none;
+    background: url("image/bg_search.png") no-repeat left top;
+    width: 305px;
+    height: 30px;
+    margin: 5px 6px 5px 0;
+}
+
+.search-button {
+    position: absolute;
+    margin-top: 3px;
+    margin-left: 7px;
+}
+
+.search-head li:active, :hover, :focus { /* убрал все стили у поисковой формы */
+    outline: 0;
+    outline-offset: 0;
+}
+
+#quickquery {
+    border: none;
+    font-size: 12px;
+    margin: 8px 23px 5px 5px;
+    width: 210px;
+    font: normal 12px Verdana, Geneva, sans-serif;
+}
+
+/* Меню */
 
 .menu {
     list-style: none;
@@ -96,27 +105,32 @@ img {
     display: table-row;
 
 }
+
 .menu li {
     display: table-cell;
     width: auto;
     text-align: center;
     height: 50px;
-    border-left: 1px solid rgba(43,153,208,.4); /* рамки для разделения меню */
-    border-right: 1px solid rgba(3,87,134,.4); /* рамки для разделения меню */
+    border-left: 1px solid rgba(43, 153, 208, .4); /* рамки для разделения меню */
+    border-right: 1px solid rgba(3, 87, 134, .4); /* рамки для разделения меню */
     vertical-align: bottom; /* Выравнивает элемент по вертикали относительно своего родителя, окружающего текста или ячейки таблицы. */
 }
+
 .menu li:hover {
-    border-left: 1px solid rgba(1,73,111,.4); /* рамки для разделения меню */
-    border-right: 1px solid rgba(1,73,111,.4); /* рамки для разделения меню */
+    border-left: 1px solid rgba(1, 73, 111, .4); /* рамки для разделения меню */
+    border-right: 1px solid rgba(1, 73, 111, .4); /* рамки для разделения меню */
     background: #01496f url("image/menu-bg-light.png") center top no-repeat;
     transition: 0.6s all ease;
 }
-.menu li:first-child {/* убрать рамку слева menu */
+
+.menu li:first-child { /* убрать рамку слева menu */
     border-left: none;
 }
-.menu li:last-child {/* убрать рамку справа menu */
+
+.menu li:last-child { /* убрать рамку справа menu */
     border-right: none;
 }
+
 .menu li a {
     display: block;
     width: 1000px;
@@ -128,7 +142,7 @@ img {
     font: 14px Verdana, Geneva, sans-serif;
 }
 
-    /* Центральный блок */
+/* Центральный блок */
 
 .content-wrapper {
     float: left;
@@ -136,12 +150,15 @@ img {
     color: #fff;
     background-color: #fff;
 }
+
 .content {
     margin: 0 240px 0 240px;
 }
+
 .content-index {
     overflow: hidden;
 }
+
 .content-index h1 {
     text-align: center;
     color: #22aedb;
@@ -149,27 +166,33 @@ img {
     font: bold 30px Verdana, Geneva, sans-serif;
     margin: 15px 0 20px 0;
 }
+
 .production-index {
     text-align: center;
     width: 50%;
     float: left;
     margin: 10px 0 15px 0;
 }
+
 .production-index h2 {
     font: bold 14px Verdana, Geneva, sans-serif;
     margin: 0 0 10px 0;
 }
+
 .production-index p {
     font: bold 14px Verdana, Geneva, sans-serif;
     color: #2a73a3;
 }
+
 .production-index p span {
     font: bold 25px Candara, sans-serif;
 }
+
 .production-index a {
     color: #2a73a3;
     text-decoration: none;
 }
+
 .add-catalog {
     margin: 10px 0 0 0;
 }
@@ -182,52 +205,61 @@ img {
 }
 
 
-    /* Каталог - Левый блок */
+/* Каталог - Левый блок */
 
 .left-bar {
     float: left;
     width: 240px;
     margin-left: -100%;
 }
+
 .left-bar-content {
     background: #f7f7f7;
     margin: 6px 0 0 6px;
 }
+
 .left-bar-content h2 {
     color: #fff;
     font: normal 18px Verdana, Geneva, sans-serif;
-    background: rgb(14,148,195); /* Old browsers */
-    background: -moz-linear-gradient(left,  rgb(14,148,195) 0%, rgb(4,88,144) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left,  rgb(14,148,195) 0%,rgb(4,88,144) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right,  rgb(14,148,195) 0%,rgb(4,88,144) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e94c3', endColorstr='#045890',GradientType=1 ); /* IE6-9 */
+    background: rgb(14, 148, 195); /* Old browsers */
+    background: -moz-linear-gradient(left, rgb(14, 148, 195) 0%, rgb(4, 88, 144) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgb(14, 148, 195) 0%, rgb(4, 88, 144) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgb(14, 148, 195) 0%, rgb(4, 88, 144) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0e94c3', endColorstr='#045890', GradientType=1); /* IE6-9 */
     border-radius: 4px 4px 0 0;
 }
+
 .left-bar-content h2 span {
     display: block;
     background: url("image/glic.png") left top no-repeat;
     padding: 5px 0 5px 10px;
 }
+
 .left-bar-content a {
     text-decoration: none;
     color: #000;
     font: bold 14px Verdana, Geneva, sans-serif;
 }
+
 .left-bar-content a:hover {
     text-decoration: underline; /* При наведении ссылка Каталога подчеркивается */
 }
+
 .vse {
     padding: 10px 0 10px 55px;
 }
+
 .nav-new {
     background: url("image/new.png") left center no-repeat;
     border-bottom: 1px solid #e1e1e1;
 }
+
 .nav-lider {
     background: url("image/lider.png") left center no-repeat;
     border-top: 1px solid #fff;
     border-bottom: 1px solid #e1e1e1;
 }
+
 .nav-sale {
     background: url("image/sale.png") left center no-repeat;
     border-top: 1px solid #fff;
@@ -235,8 +267,7 @@ img {
 }
 
 
-
-    /* Левая колонка - Мобильные телефоны (список)*/
+/* Левая колонка - Мобильные телефоны (список)*/
 
 .left-bar-content h4 {
     color: #fff;
@@ -247,32 +278,39 @@ img {
     background: linear-gradient(to right, rgb(14, 148, 195) 0%, rgb(4, 88, 144) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0e94c3', endColorstr='#045890', GradientType=1); /* IE6-9 */
 }
+
 .left-bar-content h4 span {
     display: block;
     background: url("image/glic2.png") left top no-repeat;
     padding: 7px 0 7px 10px;
     font: normal 14px Verdana, Geneva, sans-serif;
 }
+
 .nav-catalog {
     padding: 10px 10px 20px 55px; /* Отступы списка - Мобильные телефоны  */
     list-style-image: url("image/marker.png");
     border-top: 1px solid #fff;
     border-bottom: 1px solid #e1e1e1;
 }
+
 .nav-catalog ul {
     padding: 5px 0 0 20px;
 }
+
 .nav-catalog li {
     margin: 0 0 5px 0;
 }
+
 .nav-catalog ul li {
     margin: 0;
     font: 14px Verdana, Geneva, sans-serif;
 }
+
 .nav-catalog li a {
     font: normal 14px Verdana, Geneva, sans-serif;
     color: #000;
 }
+
 .nav-catalog li a:hover {
     font: bold 14px Verdana, Geneva, sans-serif;
     color: #1b7cb1;
@@ -280,7 +318,7 @@ img {
 }
 
 
-    /* Блок - Контакты */
+/* Блок - Контакты */
 
 .bar-contact {
     font: normal 14px Verdana, Geneva, sans-serif;
@@ -289,20 +327,23 @@ img {
     padding: 15px 0 20px 15px;
     color: #000;
 }
+
 .bar-contact h3 {
     font-size: 18px;
     font-weight: normal;
 }
+
 .bar-contact p {
     font-size: 14px;
     margin: 15px 0 0 0;
 }
+
 .bar-contact p span {
     font-size: 18px;
     font-weight: bold;
 }
 
-    /* Блок Новостей */
+/* Блок Новостей */
 
 .news {
     font: normal 14px Verdana, Geneva, sans-serif;
@@ -310,21 +351,25 @@ img {
     border-bottom: 1px solid #e1e1e1;
     padding: 15px 0 20px 15px;
 }
+
 .news h3 {
     font-size: 16px;
     font-weight: normal;
 }
+
 .news p {
     font-size: 12px;
     font-weight: bold;
     margin: 15px 0 0 0;
 }
+
 .news p span {
     color: #7f7e7e;
     font-size: 10px;
     background: #e7e7e7;
     padding: 1px 7px;
 }
+
 .news a {
     display: block;
     font-size: 12px;
@@ -332,13 +377,16 @@ img {
     margin: 5px 0 0 0;
     color: #555;
 }
+
 .news a:hover {
     text-decoration: none;
 }
+
 div .news-click {
     border: 1px solid #fff;
     padding: 5px 10px;
-    text-align: center; width: 120px;
+    text-align: center;
+    width: 120px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
@@ -349,7 +397,7 @@ div .news-click {
     margin-top: 15px;
 }
 
-    /* Способ оплаты, Доставка, Информация для Вас */
+/* Способ оплаты, Доставка, Информация для Вас */
 
 .info {
     font: normal 14px Verdana, Geneva, sans-serif;
@@ -357,155 +405,177 @@ div .news-click {
     border-bottom: 1px solid #e1e1e1;
     padding: 15px 0 20px 15px;
 }
+
 .info p {
     margin-top: 5px;
 }
+
 .info h3 {
     font: normal 18px Verdana, Geneva, sans-serif;
 }
+
 .info a {
     font-size: 12px;
     font-weight: normal;
     color: #555;
 }
+
 .info a:hover {
     text-decoration: none;
 }
+
 .info:last-child {
     border-bottom: none;
 }
 
 
-    /* Правая колонка */
+/* Правая колонка */
 
 .right-bar {
     float: left;
     width: 240px;
     margin-left: -240px;
-
 }
 
-    /* Авторизация */
+/* Авторизация */
 
 .enter {
-    margin: 5px  10px 0;
+    margin: 5px 10px 0;
     background-color: #f7f7f7;
     height: 100px;
 }
+
 .enter h2 {
     color: #fff;
     font: normal 18px Verdana, Geneva, sans-serif;
-    background: rgb(14,148,195); /* Old browsers */
-    background: -moz-linear-gradient(left,  rgb(14,148,195) 0%, rgb(4,88,144) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left,  rgb(14,148,195) 0%,rgb(4,88,144) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right,  rgb(14,148,195) 0%,rgb(4,88,144) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e94c3', endColorstr='#045890',GradientType=1 ); /* IE6-9 */
+    background: rgb(14, 148, 195); /* Old browsers */
+    background: -moz-linear-gradient(left, rgb(14, 148, 195) 0%, rgb(4, 88, 144) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgb(14, 148, 195) 0%, rgb(4, 88, 144) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgb(14, 148, 195) 0%, rgb(4, 88, 144) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0e94c3', endColorstr='#045890', GradientType=1); /* IE6-9 */
     border-radius: 4px 4px 0 0;
 }
+
 .enter h2 span {
     display: block;
     background: url("image/glic2.png") center top no-repeat;
     padding: 7px 0 7px 10px;
     font: normal 14px Verdana, Geneva, sans-serif;
 }
+
 .enter h6 {
     font: normal 12px Verdana, Geneva, sans-serif;
     position: absolute;
     margin: -27px 0 0 15px;
 }
+
 .enter-click {
     margin: 20px 40px 20px 40px;
 }
+
 .enter-click a:visited {
     color: #1e1e1e;
 }
 
 
-    /* Корзина */
+/* Корзина */
 
 .enter-basket {
-    margin: 10px  10px 0;
+    margin: 10px 10px 0;
     background-color: #f7f7f7;
     height: 150px;
 }
+
 .enter-basket h2 {
     color: #fff;
     font: normal 18px Verdana, Geneva, sans-serif;
-    background: rgb(14,148,195); /* Old browsers */
-    background: -moz-linear-gradient(left,  rgb(14,148,195) 0%, rgb(4,88,144) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left,  rgb(14,148,195) 0%,rgb(4,88,144) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right,  rgb(14,148,195) 0%,rgb(4,88,144) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e94c3', endColorstr='#045890',GradientType=1 ); /* IE6-9 */
+    background: rgb(14, 148, 195); /* Old browsers */
+    background: -moz-linear-gradient(left, rgb(14, 148, 195) 0%, rgb(4, 88, 144) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgb(14, 148, 195) 0%, rgb(4, 88, 144) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgb(14, 148, 195) 0%, rgb(4, 88, 144) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0e94c3', endColorstr='#045890', GradientType=1); /* IE6-9 */
     border-radius: 3px 3px 0 0;
 }
+
 .enter-basket h2 span {
     display: block;
     background: url("image/glic2.png") center top no-repeat;
     padding: 7px 0 7px 10px;
     font: normal 14px Verdana, Geneva, sans-serif;
 }
+
 .enter-basket a:visited {
     color: #1e1e1e;
 }
+
 .enter-basket h6 {
     font: normal 12px Verdana, Geneva, sans-serif;
     position: absolute;
     margin: -27px 0 0 15px;
 }
+
 .enter-basket-click {
     margin: 10px 40px 20px 40px;
 }
+
 .enter-basket p {
     margin: 15px 10px 10px 10px;
     text-align: center;
     font: normal 12px/2 Verdana, Geneva, sans-serif;
 
 }
+
 .enter-basket p span {
     font: bold 14px Verdana, Geneva, sans-serif;
     color: #2a73a3;
 }
 
 
-    /* Выбор по параметрам */
+/* Выбор по параметрам */
 
 .share-search {
-    margin: 10px  10px 0;
+    margin: 10px 10px 0;
     background-color: #f7f7f7;
     height: 150px;
 }
+
 .share-search h2 {
     color: #fff;
     font: normal 18px Verdana, Geneva, sans-serif;
-    background: rgb(14,148,195); /* Old browsers */
-    background: -moz-linear-gradient(left,  rgb(14,148,195) 0%, rgb(4,88,144) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left,  rgb(14,148,195) 0%,rgb(4,88,144) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right,  rgb(14,148,195) 0%,rgb(4,88,144) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0e94c3', endColorstr='#045890',GradientType=1 ); /* IE6-9 */
+    background: rgb(14, 148, 195); /* Old browsers */
+    background: -moz-linear-gradient(left, rgb(14, 148, 195) 0%, rgb(4, 88, 144) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgb(14, 148, 195) 0%, rgb(4, 88, 144) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgb(14, 148, 195) 0%, rgb(4, 88, 144) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0e94c3', endColorstr='#045890', GradientType=1); /* IE6-9 */
     border-radius: 3px 3px 0 0;
 }
+
 .share-search h2 span {
     display: block;
     background: url("image/glic2.png") center top no-repeat;
     padding: 7px 0 7px 10px;
     font: normal 14px Verdana, Geneva, sans-serif;
 }
+
 .share-search div {
     font-size: 12px;
     font-family: Verdana, Geneva, sans-serif;
     padding: 10px 10px 25px 10px;
     background: #f0f0f0;
 }
+
 .share-search div p {
     font-size: 14px;
     margin: 10px 0 8px 0;
 }
+
 .share-search div select {
     font-family: Verdana, Geneva, sans-serif;;
     font-size: 14px;
     width: 200px;
     padding: 3px;
 }
+
 .podbor-price {
     border: 1px solid #959b9e;
     width: 55px;
@@ -514,6 +584,7 @@ div .news-click {
     font-size: 12px;
     font-family: Verdana, Geneva, sans-serif;
 }
+
 .podbor {
     display: block;
     width: 145px;
@@ -521,64 +592,76 @@ div .news-click {
 }
 
 
-    /* Footer - подвал */
+/* Footer - подвал */
 .footer {
     border-top: 5px solid #e7e5e5;
-   background: #0464b4 url("image/menu-bg2.png") top repeat-x;
+    background: #0464b4 url("image/menu-bg2.png") top repeat-x;
     overflow: hidden;
-    color: rgba(255,255,255,.7);
+    color: rgba(255, 255, 255, .7);
     padding: 0 0 10px 0;
     border-radius: 0 0 5px 5px;
 }
+
 .flogo {
     float: left;
     margin: 25px 0 0 10px;
 }
+
 .flogo p {
     margin: 0 0 0 10px;
     font: bold 14px Verdana, Geneva, sans-serif;
 }
+
 .fphone {
     float: right;
     text-align: right;
     font: bold 14px/1.5 Verdana, Geneva, sans-serif;
-    margin: 15px 20px 0 0 ;
+    margin: 15px 20px 0 0;
 }
+
 .fphone p {
     font-weight: normal;
     font-size: 12px;
 }
+
 .fphone h2 {
     font-size: 14px;
 }
+
 .fphone h1 {
     font-size: 21px;
     margin: 0 0 20px 0;
 }
+
 .fmenu {
     font: 14px Verdana, Geneva, sans-serif;
     overflow: hidden;
     width: 360px;
     margin: 20px auto 0 auto;
 }
+
 .fmenu p {
     text-align: center;
     font-weight: bold;
 }
+
 .fmenu ul {
     float: left;
     list-style: none;
     margin: 15px;
     line-height: 1.5;
 }
+
 fmenu ul li {
     margin: 0 0 5px 0;
 }
+
 .fmenu ul a {
     text-decoration: none;
-    color: rgba(255,255,255,.7);
+    color: rgba(255, 255, 255, .7);
 }
+
 .fmenu ul a:hover {
     text-decoration: none;
-    color: rgba(255,255,255,1);
+    color: rgba(255, 255, 255, 1);
 }
